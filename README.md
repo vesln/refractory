@@ -7,7 +7,39 @@
 
 ## Synopsis
 
+Refactory is a thin `require` wrapper that will allow you to search files in
+conventional paths.
+
 ## Description
+
+When implementing CLI apps it's often a requirement to support "formatters",
+"reporters" and various ".rc" files. In my case I needed to add support for formatters
+to both [curiosity](https://github.com/vesln/curiosity) and
+[hell](https://github.com/vesln/hell). However, allowing users to implement
+custom formatters is a nifty feature. This is how refractory was born.
+
+### Usage
+
+```js
+var load = require('refractory')('../lib/curiosity/formatters',
+'.curiosity/formatters');
+var Formatter = load('my-awesome-formatter');
+```
+
+Refractory will try to load 'my-awesome-formatter' from the following paths:
+
+- lib/curiosity/formatters/
+- ~/.curiosity/formatters/
+- node_modules/my-awesome-formatter
+
+#### Errors
+
+In case the requested file can't be found refractory will throw an error.
+The error has the following extra properties:
+
+- code - Always equals to "MODULE_NOT_FOUND"
+- paths - An array of all of the variations that refractory try to load. Useful
+  for debugging issues
 
 ## Installation
 
