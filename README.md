@@ -9,8 +9,6 @@
 
 ## Description
 
-## Usage
-
 ## Installation
 
 ```bash
@@ -22,20 +20,14 @@ $ npm install refractory
 ### Running the tests
 
 ```bash
-$ npm install
-$ make test
+$ npm test
 ```
 
 ### Test coverage
 
 ```bash
-$ make test-cov
+$ npm run-script coverage
 ```
-
-### JSHint
-
-```bash
-$ make jshint
 
 ## Support the author
 
