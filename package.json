@@ -1,15 +1,18 @@
 {
   "name": "refractory",
-  "version": "0.0.2",
-  "description": "Tiny, recursive and synchronous file finder utility",
-  "keywords": ["find", "findr", "finder"],
-  "main": "index.js",
+  "version": "0.0.1",
+  "description": "",
+  "keywords": ["find", "require", "finder"],
+  "main": "lib/refractory",
   "homepage": "https://github.com/vesln/refractory",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "make test"
+    "test": "./node_modules/.bin/mocha test/*.test.js",
+    "pretest": "./node_modules/.bin/jshint .",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha test/*.test.js",
+    "coveralls": "istanbul cover ./node_modules/.bin/_mocha test/*.test.js --report lcovonly && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +25,6 @@
     "chai": "~1.8.1",
     "jshint": "~2.3.0",
     "coveralls": "~2.3.0",
-    "jscoverage": "~0.3.8",
-    "mocha-lcov-reporter": "0.0.1"
+    "istanbul": "~0.1.44"
   }
 }

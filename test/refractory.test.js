@@ -9,7 +9,7 @@ describe('refractory', function() {
   });
 
   it('tries to load files as modules secondly', function() {
-    expect(load('chai')).to.be.ok;
+    expect(load('chai')).to.be.ok; // jshint ignore: line
   });
 
    it('tries to load files from the home directory lastly', function() {
