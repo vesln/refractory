@@ -21,8 +21,7 @@ custom formatters is a nifty feature. This is how refractory was born.
 ### Usage
 
 ```js
-var load = require('refractory')('../lib/curiosity/formatters',
-'.curiosity/formatters');
+var load = require('refractory')('../curiosity/formatters', '.curiosity/formatters');
 var Formatter = load('my-awesome-formatter');
 ```
 
