@@ -37,7 +37,7 @@ In case the requested file can't be found refractory will throw an error.
 The error has the following extra properties:
 
 - code - Always equals to "MODULE_NOT_FOUND"
-- paths - An array of all of the variations that refractory try to load. Useful
+- paths - An array of all of the variations that refractory tried to load. Useful
   for debugging issues
 
 ## Installation
