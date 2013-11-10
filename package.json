@@ -1,6 +1,6 @@
 {
   "name": "refractory",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Thin require wrapper that will allow you to load files from conventional paths",
   "keywords": ["require"],
   "main": "lib/refractory",
