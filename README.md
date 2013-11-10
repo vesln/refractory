@@ -60,7 +60,7 @@ $ npm test
 $ npm run-script coverage
 ```
 
-### Contributors
+## Contributors
 
 ```
  project  : refractory
