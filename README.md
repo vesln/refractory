@@ -60,6 +60,19 @@ $ npm test
 $ npm run-script coverage
 ```
 
+### Contributors
+
+```
+ project  : refractory
+ repo age : 13 hours
+ active   : 1 days
+ commits  : 12
+ files    : 21
+ authors  :
+    11	Veselin Todorov         91.7%
+     1	Jake Luer               8.3%
+```
+
 ## Support the author
 
 Do you like this project? Star the repository, spread the word - it really helps. You may want to follow
