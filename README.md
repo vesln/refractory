@@ -7,7 +7,7 @@
 
 ## Synopsis
 
-Refactory is a thin `require` wrapper that will allow you to search files in
+Refactory is a thin `require` wrapper that will allow you to load files from
 conventional paths.
 
 ## Description
@@ -21,14 +21,14 @@ custom formatters is a nifty feature. This is how refractory was born.
 ### Usage
 
 ```js
-var load = require('refractory')('../curiosity/formatters', '.curiosity/formatters');
+var load = require('refractory')(__dirname + '/hell/formatters', '.hell/formatters');
 var Formatter = load('my-awesome-formatter');
 ```
 
 Refractory will try to load 'my-awesome-formatter' from the following paths:
 
-- lib/curiosity/formatters/
-- ~/.curiosity/formatters/
+- lib/hell/formatters/
+- ~/.hell/formatters/
 - node_modules/my-awesome-formatter
 
 #### Errors
