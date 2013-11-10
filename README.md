@@ -60,18 +60,11 @@ $ npm test
 $ npm run-script coverage
 ```
 
-## Contributors
+## Credits
 
-```
- project  : refractory
- repo age : 13 hours
- active   : 1 days
- commits  : 12
- files    : 21
- authors  :
-    11	Veselin Todorov         91.7%
-     1	Jake Luer               8.3%
-```
+Special thanks to:
+
+  - [Jake Luer](https://github.com/logicalparadox)
 
 ## Support the author
 
