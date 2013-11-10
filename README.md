@@ -21,15 +21,27 @@ custom formatters is a nifty feature. This is how refractory was born.
 ### Usage
 
 ```js
-var load = require('refractory')(__dirname + '/hell/formatters', process.env.HOME + '.hell/formatters');
-var Formatter = load('my-awesome-formatter');
+var refractory = require('refractory');
+var load = refractory(module, './hell/formatters', '{{HOME}}/.hell/formatters');
+var Formatter = load('hell-awesome-formatter', 'awesome-formatter');
 ```
 
-Refractory will try to load 'my-awesome-formatter' from the following paths:
+Refractory will try to load 'hell-awesome-formatter' then 'awesome-formatter' from the
+following locations.
 
-- lib/hell/formatters/
+- ./hell/formatters/
 - ~/.hell/formatters/
 - node_modules/my-awesome-formatter
+
+You may also add addition template slugs by setting them on refractory.
+
+```js
+// set
+refractory.PKG_HOME = require('path').join(refractory.HOME, '.hell');
+
+// use
+var load = refractory(module, '{{PKG_HOME}}/formatters');
+```
 
 #### Errors
 
