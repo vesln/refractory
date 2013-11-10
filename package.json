@@ -1,7 +1,7 @@
 {
   "name": "refractory",
   "version": "0.0.1",
-  "description": "Flexible file loader",
+  "description": "Thin require wrapper that will allow you to load files from conventional paths",
   "keywords": ["require"],
   "main": "lib/refractory",
   "homepage": "https://github.com/vesln/refractory",
