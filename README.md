@@ -21,7 +21,7 @@ custom formatters is a nifty feature. This is how refractory was born.
 ### Usage
 
 ```js
-var load = require('refractory')(__dirname + '/hell/formatters', '.hell/formatters');
+var load = require('refractory')(__dirname + '/hell/formatters', process.env.HOME + '.hell/formatters');
 var Formatter = load('my-awesome-formatter');
 ```
 
